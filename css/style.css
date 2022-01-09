@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    overflow-x: hidden;
+    background-image: url(../img/bg.png);
+    font-family: 'Poppins', sans-serif;
+}
+
+.informasi {
+    /* width: calc(1.5rem + 1vw); */
+    transition: .5s;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.informasi:hover {
+    color: gray;
+}
+
+.icon {
+    width: 8em;
+    margin: 0 10px;
+    transition: .5s;
+    box-shadow: 0 0 0 3px limegreen;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.icon:hover {
+    box-shadow: 0 0 10px 5px limegreen;
+}
+
+.pemain {
+    width: calc(13rem + 5.5vw);
+}
+
+.pemain-1 {
+    margin-right: -10rem;
+}
+
+.pemain-2 {
+    margin-left: -10rem;
+}
+
+h2.vs {
+    font-size: calc(7rem - 1vw);
+    font-family: serif;
+}
+
+.caption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.content {
+    transform: translateY(-30%);
+    opacity: 0;
+    transition: .7s;
+
+}
+
+.muncul {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.info {
+    font-size: 3rem;
+    color: crimson;
+}
+
+.bayang {
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, .5));
+}
+
+@media screen and (max-width: 768px) {
+    .pemain-1 {
+        margin-right: -3rem;
+    }
+
+    .pemain-2 {
+        margin-left: -3rem;
+    }
+
+    .icon {
+        width: 6.5em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .pemain-1 {
+        margin-right: 0rem;
+    }
+
+    .pemain-2 {
+        margin-left: 0rem;
+    }
+
+    .icon {
+        width: 8em;
+    }
+}

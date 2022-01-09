@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suit</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <section id="judul">
+        <div class="row justify-content-center text-center mt-3">
+            <div class="col-md-12">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="calc(1.5rem + 1vw)" height="calc(1.5rem + 1vw)"
+                    fill="currentColor" class="bi bi-info-circle-fill informasi " viewBox="0 0 16 16"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <path
+                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                </svg>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ..
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1>Rock Paper Scissors</h1>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="arena">
+        <div class="row justify-content-center text-center mt-5">
+            <div class="col-md-12">
+                <img src="img/batu-2.png" alt="batu" class="icon" id="batu" data-bs-toggle="tooltip" data-bs-placement="top" title="Rock">
+                <img src="img/kertas-2.png" alt="kertas" class="icon" id="kertas" data-bs-toggle="tooltip" data-bs-placement="top" title="Paper"> 
+                <img src="img/gunting-2.png" alt="gunting" class="icon" id="gunting" data-bs-toggle="tooltip" data-bs-placement="top" title="Scissors">
+            </div>
+            <div class="col-md-12">
+                <div class="row justify-content-center text-center mt-5">
+                    <div class="col-md-4">
+                        <img src="img/batu-2.png" alt="" class="pemain pemain-1" id="player" data-bs-toggle="tooltip" data-bs-placement="top" title="You (Player)">
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center justify-content-center ">
+                        <h2 class="vs">VS</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/batu-1.png" alt="" class="pemain pemain-2" id="computer" data-bs-toggle="tooltip" data-bs-placement="top" title="Computer">
+                    </div>
+
+                    <div class="caption" tabindex="-1" style="display: none;">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content content bayang" id="content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Result Game</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close" id="close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="info"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
